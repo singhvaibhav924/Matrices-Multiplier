@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent">
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:text="Matrices Multiplier"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/mainTextView1"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:gravity="center"
+		android:background="#F6AA9C"/>
+
+	<ScrollView
+		android:layout_height="132dp"
+		android:layout_width="132dp"
+		android:layout_below="@id/mainTextView1"
+		android:layout_marginTop="75dp"
+		android:foregroundGravity="center"
+		android:layout_marginLeft="10dp"
+		android:fillViewport="true"
+		android:background="@drawable/scroll">
+
+		<HorizontalScrollView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:foregroundGravity="center">
+
+			<TableLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/tb1"
+				android:gravity="center"
+				android:textAlignment="gravity">
+
+			</TableLayout>
+
+		</HorizontalScrollView>
+
+	</ScrollView>
+
+	<ScrollView
+		android:layout_height="132dp"
+		android:layout_width="132dp"
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/mainTextView1"
+		android:layout_marginTop="75dp"
+		android:foregroundGravity="center"
+		android:layout_marginRight="10dp"
+		android:fillViewport="true"
+		android:background="@drawable/scroll">
+
+		<HorizontalScrollView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:foregroundGravity="center">
+
+			<TableLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/tb2"
+				android:gravity="center"
+				android:textAlignment="gravity"/>
+
+		</HorizontalScrollView>
+
+	</ScrollView>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:text="Order"
+		android:layout_below="@id/mainTextView1"
+		android:layout_marginTop="5dp"
+		android:layout_marginLeft="50dp"
+		android:id="@+id/mainTextView2"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:text="Order"
+		android:layout_below="@id/mainTextView1"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="5dp"
+		android:layout_marginRight="50dp"
+		android:id="@+id/mainTextView3"/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_below="@id/mainTextView2"
+		android:layout_marginLeft="20dp"
+		android:id="@+id/t1"
+		android:background="@drawable/order"
+		android:text="3"
+		android:textSize="17sp"
+		android:ems="1"
+		android:gravity="center"
+		android:singleLine="true"
+		android:layout_marginTop="5dp"/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_below="@id/mainTextView2"
+		android:layout_marginLeft="97dp"
+		android:id="@+id/t2"
+		android:text="3"
+		android:textSize="17sp"
+		android:ems="1"
+		android:gravity="center"
+		android:singleLine="true"
+		android:background="@drawable/order"
+		android:layout_marginTop="5dp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:text="X"
+		android:textAlignment="gravity"
+		android:gravity="center"
+		android:layout_below="@id/mainTextView2"
+		android:layout_marginLeft="70dp"
+		android:layout_marginTop="8dp"
+		android:layout_alignParentLeft="true"/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/mainTextView3"
+		android:layout_marginRight="97dp"
+		android:id="@+id/t3"
+		android:ems="1"
+		android:gravity="center"
+		android:text="3"
+		android:singleLine="true"
+		android:background="@drawable/order"
+		android:layout_marginTop="5dp"/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/mainTextView3"
+		android:layout_marginTop="5dp"
+		android:layout_marginRight="20dp"
+		android:id="@+id/t4"
+		android:ems="1"
+		android:gravity="center"
+		android:text="3"
+		android:background="@drawable/order"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:text="X"
+		android:gravity="center"
+		android:textAlignment="gravity"
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/mainTextView3"
+		android:layout_marginTop="8dp"
+		android:layout_marginRight="70dp"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Calculate"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@id/mainTextView1"
+		android:layout_marginTop="230dp"
+		android:id="@+id/b1"/>
+
+	<ScrollView
+		android:layout_height="132dp"
+		android:layout_width="132dp"
+		android:layout_below="@id/b1"
+		android:layout_marginTop="20dp"
+		android:foregroundGravity="center"
+		android:layout_centerHorizontal="true"
+		android:fillViewport="true"
+		android:background="@drawable/scroll">
+
+		<HorizontalScrollView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:foregroundGravity="center">
+
+			<TableLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/res"
+				android:gravity="center"
+				android:textAlignment="gravity">
+
+			</TableLayout>
+
+		</HorizontalScrollView>
+
+	</ScrollView>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="horizontal"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:gravity="right"
+		android:background="#F6AA9C"
+		android:layout_marginBottom="0dp">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:text="Created By :~ Vaibhav Singh Sikarwar"/>
+
+	</LinearLayout>
+
+	<Button
+		style="?android:attr/buttonStyleSmall"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Clear"
+		android:textSize="10sp"
+		android:textStyle="bold"
+		android:padding="1dp"
+		android:gravity="center"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@id/t2"
+		android:layout_marginTop="15dp"/>
+
+</RelativeLayout>
+
